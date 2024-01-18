@@ -86,6 +86,7 @@ button {
   color: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  transition: .5s;
 }
 
 button:hover {
@@ -94,6 +95,7 @@ button:hover {
   background-color: transparent;
   color: hsl(237, 63%, 64%);
   border-color: var(--dBlue);
+  transition: .5s;
 }
 
 .pro {

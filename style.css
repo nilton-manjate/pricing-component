@@ -115,3 +115,28 @@ button:hover {
   color: white;
   border-color: white;
 }
+
+@media only screen and (min-width: 900px) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    margin: 50px;
+  }
+
+  .basic {
+    border-radius: 5px 0px 0px 5px; 
+  }
+
+  .pro {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 7px;
+  }
+
+  .master {
+    border-radius: 0px 5px 5px 0px;
+  }
+}

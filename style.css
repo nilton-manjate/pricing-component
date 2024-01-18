@@ -116,6 +116,21 @@ button:hover {
   border-color: white;
 }
 
+footer {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  color: var(--gBlue);
+}
+
+footer a {
+  color: var(--dBlue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 900px) {
   main {
     display: flex;

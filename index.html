@@ -65,13 +65,17 @@
 
   <script>
     "use strict";
-
      const period = document.getElementById("check");
+     const num = document.getElementsByTagName("strong");
      period.addEventListener("change", function(){
-       if(period.checked) {
-         window.location.href = "index.html";
+       if (period.checked) {
+         num[0].textContent = "19.99";
+         num[1].textContent = "24.99"; 
+         num[2].textContent = "39.99"; 
        } else {
-         window.location.href = "pag01.html";
+         num[0].textContent = "199.99";
+         num[1].textContent = "249.99"; 
+         num[2].textContent = "399.99"; 
        }
      });
   </script>

@@ -67,6 +67,7 @@
     "use strict";
      const period = document.getElementById("check");
      const num = document.getElementsByTagName("strong");
+     const container = document.getElementsByClassName("container")[0];
      period.addEventListener("change", function(){
        if (period.checked) {
          num[0].textContent = "19.99";
@@ -78,6 +79,13 @@
          num[2].textContent = "399.99"; 
        }
      });
+
+    container.tabIndex = "1";
+    container.addEventListener("keydown", function() {
+      if (event.code === 'Space' || event.code === 'Enter') {
+        period.checked = !period.checked;
+      }
+    });
   </script>
 </body>
 </html>
